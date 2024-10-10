@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-mails Cadastrados</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de E-mails Cadastrados</h1>
+        <ul>
+            <% emails.forEach(email => { %>
+                <li><%= email.username %> - <%= email.email %></li>
+            <% }) %>
+        </ul>
+
+        <h2>Remover e-mail</h2>
+        <form action="/remove" method="POST">
+            <label for="email">E-mail:</label>
+            <input type="email" name="email" id="email" required>
+            <button type="submit">Remover</button>
+        </form>
+
+        <p><a href="/">Clique aqui para cadastrar mais e-mails</a></p>
+    </div>
+</body>
+</html>
