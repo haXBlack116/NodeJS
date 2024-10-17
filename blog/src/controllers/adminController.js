@@ -38,7 +38,7 @@ const adminController = {
     const { title, content } = req.body
 
     postModel.updatePost(id, { title, content })
-
+    
     res.redirect('/admin')
   },
 
