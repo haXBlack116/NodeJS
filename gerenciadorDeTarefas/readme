@@ -44,7 +44,7 @@ Siga os passos abaixo para instalar e rodar a aplicação:
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/haXBlacK116/NodeJS.git
+   git clone https://github.com/haXBlacK116/NodeJS/gerenciadorDeTarefas.git
    cd sua-aplicacao
    ```
 
