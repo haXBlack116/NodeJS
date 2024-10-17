@@ -44,7 +44,7 @@ Siga os passos abaixo para instalar e rodar a aplicação:
 
 1. **Clone o repositório**:
    ```bash
-   git clone https://github.com/seu-usuario/sua-aplicacao.git
+   git clone https://github.com/haXBlacK116/NodeJS.git
    cd sua-aplicacao
    ```
 
@@ -248,7 +248,13 @@ A aplicação possui as seguintes funcionalidades principais:
 
 ### Considerações Finais
 
-Este projeto oferece uma solução básica, mas funcional, para gerenciamento de listas de tarefas. Ele pode ser facilmente expandido para incluir funcionalidades mais complexas, como autenticação de usuários, filtros de tarefas, ou integração com bancos de dados. O uso de **Node.js** com **Express** permite uma aplicação leve e modular, enquanto o **EJS** facilita a renderização de páginas dinâmicas.
+Este projeto oferece uma solução básica, mas funcional, para gerenciamento de listas de tarefas. 
+Ele pode ser facilmente expandido para incluir funcionalidades mais complexas, como autenticação de usuários, 
+filtros de tarefas, ou integração com bancos de dados. O uso de **Node.js** com **Express** permite uma aplicação leve e modular, 
+enquanto o **EJS** facilita a renderização de páginas dinâmicas.
+
+OBS: Os links de contato e etc não estão funcionais.
+
 
 
 
