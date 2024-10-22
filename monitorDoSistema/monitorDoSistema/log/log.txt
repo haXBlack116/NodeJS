@@ -1,0 +1,280 @@
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3272.64,
+  "usoMemoria": 64.06113534873128
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3273.64,
+  "usoMemoria": 64.06822928634473
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3274.656,
+  "usoMemoria": 64.11747560687864
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3275.671,
+  "usoMemoria": 64.02335242013794
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3276.671,
+  "usoMemoria": 64.07660835758381
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3277.671,
+  "usoMemoria": 64.09172152902114
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3278.671,
+  "usoMemoria": 64.09146450229602
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3279.687,
+  "usoMemoria": 64.17201667795014
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3280.687,
+  "usoMemoria": 64.17145121915486
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3281.703,
+  "usoMemoria": 64.17211948864019
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3282.703,
+  "usoMemoria": 64.09881546663459
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3283.703,
+  "usoMemoria": 64.03137165396183
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3284.718,
+  "usoMemoria": 63.977550257720694
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3285.734,
+  "usoMemoria": 63.998112395730686
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3286.734,
+  "usoMemoria": 64.00705692576503
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3287.75,
+  "usoMemoria": 64.00669708834985
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3288.765,
+  "usoMemoria": 63.99914050263118
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3289.765,
+  "usoMemoria": 63.99693007279511
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3290.765,
+  "usoMemoria": 64.00366417299338
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3291.765,
+  "usoMemoria": 63.9824851708431
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3292.765,
+  "usoMemoria": 63.975031395814476
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3293.781,
+  "usoMemoria": 64.10035762698534
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3294.781,
+  "usoMemoria": 64.10565237752292
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3295.796,
+  "usoMemoria": 64.09742752231892
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3296.796,
+  "usoMemoria": 64.04190974969195
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3297.796,
+  "usoMemoria": 63.9363745763557
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3298.796,
+  "usoMemoria": 63.91637789714098
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3299.796,
+  "usoMemoria": 63.98592932895977
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3300.812,
+  "usoMemoria": 64.08380510588731
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3301.828,
+  "usoMemoria": 64.33312102925838
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3302.828,
+  "usoMemoria": 64.36350158816813
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3303.828,
+  "usoMemoria": 64.344687231889
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3304.843,
+  "usoMemoria": 64.26053668208313
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3305.859,
+  "usoMemoria": 64.20784620343254
+}
+----------
+{
+  "so": "win32",
+  "arquitetura": "x64",
+  "modeloProcessador": "AMD Ryzen 5 4600H with Radeon Graphics         ",
+  "tempoAtividade": 3306.859,
+  "usoMemoria": 64.08853439762959
+}
+----------

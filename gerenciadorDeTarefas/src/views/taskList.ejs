@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="icon" href="/assets/checkImg.png?v=1.0" type="image/png">
+</head>
+<body>
+  <nav>
+    <ul>
+      <div class="image-container-2"></div>
+      <a href="/">Home</a>
+      <a href="/taskList">Todas as Listas</a>
+      <a href="/newList">Nova Lista</a>
+    </ul>
+  </nav>
+  
+  <div class="container">
+      <h1>Lista de Tarefas</h1>
+      <ul class="tasks">
+        <% tasksList.forEach(taskList => { %> 
+          <li>
+            <article class="task">
+              <a href="/taskList/<%= taskList.id %>" class="taskList-title">
+                <h2><%= taskList.title %></h2>
+              </a>
+              <form action="/taskList/<%= taskList.id %>/delete" method="post" onsubmit="return confirm('Deseja realmente excluir esta lista de tarefas?');">
+                <button type="submit">Remover</button>
+              </form>
+            </article>
+          </li>
+        <% }); %>
+      </ul>
+      
+      <form action="/newList" method="get" class="new-list-form">
+        <button type="submit">Nova Lista de Tarefas</button>
+      </form>  
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2024 Bernardo Eckert Wesoly - PUCRS. Todos os direitos reservados.</p>
+    <ul class="footer-links">
+      <li><a href="./about">Sobre</a></li>
+      <li><a href="./contact">Contato</a></li>
+      <li><a href="./privacy">Política de Privacidade</a></li>
+    </ul>
+  </footer>
+
+</body>
+</html>

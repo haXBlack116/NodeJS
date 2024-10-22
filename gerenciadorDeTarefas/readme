@@ -1,0 +1,260 @@
+### Documentação da Aplicação de Gerenciamento de Listas de Tarefas
+
+---
+
+#### Índice
+
+1. [Introdução](#introdução)
+2. [Requisitos do Sistema](#requisitos-do-sistema)
+3. [Instalação](#instalação)
+4. [Estrutura do Projeto](#estrutura-do-projeto)
+5. [Funcionalidades](#funcionalidades)
+6. [Rotas e Páginas](#rotas-e-páginas)
+7. [Templates EJS](#templates-ejs)
+8. [Considerações Finais](#considerações-finais)
+
+---
+
+### Introdução
+
+Este documento descreve uma aplicação de gerenciamento de coleções de listas de tarefas, construída utilizando **Node.js** com o framework **Express** e o motor de templates **EJS**. A aplicação permite ao usuário:
+
+- Visualizar todas as listas de tarefas
+- Criar novas listas de tarefas
+- Exibir as tarefas de uma lista específica
+- Adicionar novas tarefas a uma lista
+- Marcar tarefas como concluídas
+- Excluir tarefas
+
+---
+
+### Requisitos do Sistema
+
+- **Node.js**: Versão 12 ou superior
+- **Express.js**: Framework web
+- **EJS**: Motor de templates para renderização de páginas HTML dinâmicas
+- **Body-parser**: Middleware para interpretar dados do formulário
+- **Nodemon** (opcional): Para reiniciar automaticamente o servidor ao detectar mudanças no código
+
+---
+
+### Instalação
+
+Siga os passos abaixo para instalar e rodar a aplicação:
+
+1. **Clone o repositório**:
+   ```bash
+   git clone https://github.com/haXBlacK116/NodeJS/gerenciadorDeTarefas.git
+   cd sua-aplicacao
+   ```
+
+2. **Instale as dependências**:
+   ```bash
+   npm install
+   ```
+
+3. **Rodar o servidor**:
+   Utilize o comando abaixo para iniciar o servidor Node.js:
+   ```bash
+   npm start
+   ```
+
+4. **Acesse a aplicação**:
+   Abra seu navegador e vá para `http://localhost:3000` para ver a aplicação em funcionamento.
+
+---
+
+### Estrutura do Projeto
+
+```bash
+.
+├── public/                     # Arquivos estáticos (CSS, imagens)
+├── views/                      # Templates EJS
+│   ├── index.ejs               # Página inicial
+│   ├── taskLists.ejs           # Exibe todas as listas de tarefas
+│   ├── newList.ejs             # Cria uma nova lista de tarefas
+│   ├── taskDetails.ejs         # Exibe tarefas de uma lista específica
+├── app.js                      # Código principal da aplicação
+├── package.json                # Dependências e scripts do projeto
+└── README.md                   # Documentação do projeto
+```
+
+---
+
+### Funcionalidades
+
+A aplicação possui as seguintes funcionalidades principais:
+
+1. **Página Inicial**:
+   - Uma página de apresentação que explica o propósito da aplicação e fornece links para as páginas de listas de tarefas.
+
+2. **Visualizar Todas as Listas de Tarefas**:
+   - Uma página que exibe todas as listas criadas, com links para visualização de suas respectivas tarefas.
+
+3. **Criação de Novas Listas**:
+   - Um formulário para criar uma nova lista de tarefas. Cada lista pode conter várias tarefas agrupadas.
+
+4. **Visualizar Tarefas de uma Lista Específica**:
+   - Ao clicar em uma lista, o usuário é levado a uma página que exibe todas as tarefas associadas àquela lista.
+
+5. **Adicionar Tarefas a uma Lista**:
+   - Um formulário na página da lista para adicionar novas tarefas à lista específica.
+
+6. **Marcar como Concluída ou Excluir Tarefas**:
+   - Para cada tarefa, há opções para marcá-la como concluída ou excluí-la permanentemente.
+
+---
+
+### Rotas e Páginas
+
+1. **`GET /`** - Página inicial:
+   - Renderiza a página de apresentação.
+
+   Exemplo de código:
+   ```javascript
+   app.get('/', (req, res) => {
+     res.render('index');
+   });
+   ```
+
+2. **`GET /taskList`** - Exibir todas as listas:
+   - Exibe todas as listas de tarefas criadas.
+
+   Exemplo de código:
+   ```javascript
+   app.get('/taskList', (req, res) => {
+     res.render('taskLists', { taskLists });
+   });
+   ```
+
+3. **`POST /taskList/new`** - Criar uma nova lista:
+   - Rota para adicionar uma nova lista de tarefas.
+
+   Exemplo de código:
+   ```javascript
+   app.post('/taskList/new', (req, res) => {
+     const { listName } = req.body;
+     taskLists.push({ name: listName, tasks: [] });
+     res.redirect('/taskList');
+   });
+   ```
+
+4. **`GET /taskList/:id`** - Exibir uma lista específica:
+   - Exibe as tarefas de uma lista específica, identificada por um ID.
+
+   Exemplo de código:
+   ```javascript
+   app.get('/taskList/:id', (req, res) => {
+     const listId = req.params.id;
+     const list = taskLists[listId];
+     res.render('taskDetails', { list, listId });
+   });
+   ```
+
+5. **`POST /taskList/:id/addTask`** - Adicionar tarefa a uma lista:
+   - Adiciona uma nova tarefa à lista de tarefas especificada.
+
+   Exemplo de código:
+   ```javascript
+   app.post('/taskList/:id/addTask', (req, res) => {
+     const listId = req.params.id;
+     const taskName = req.body.taskName;
+     taskLists[listId].tasks.push({ name: taskName, completed: false });
+     res.redirect(`/taskList/${listId}`);
+   });
+   ```
+
+6. **`POST /taskList/:listId/completeTask/:taskId`** - Marcar tarefa como concluída:
+   - Altera o estado de uma tarefa para concluída.
+
+   Exemplo de código:
+   ```javascript
+   app.post('/taskList/:listId/completeTask/:taskId', (req, res) => {
+     const { listId, taskId } = req.params;
+     taskLists[listId].tasks[taskId].completed = true;
+     res.redirect(`/taskList/${listId}`);
+   });
+   ```
+
+7. **`POST /taskList/:listId/deleteTask/:taskId`** - Excluir tarefa:
+   - Remove uma tarefa específica da lista.
+
+   Exemplo de código:
+   ```javascript
+   app.post('/taskList/:listId/deleteTask/:taskId', (req, res) => {
+     const { listId, taskId } = req.params;
+     taskLists[listId].tasks.splice(taskId, 1);
+     res.redirect(`/taskList/${listId}`);
+   });
+   ```
+
+---
+
+### Templates EJS
+
+1. **`index.ejs`**:
+   - Página inicial de boas-vindas.
+   - Inclui um link para acessar a lista de tarefas.
+
+   Exemplo de código:
+   ```html
+   <h1>Bem-vindo ao Gerenciador de Listas de Tarefas</h1>
+   <a href="/taskList">Ver todas as listas</a>
+   ```
+
+2. **`taskLists.ejs`**:
+   - Página que exibe todas as listas de tarefas criadas.
+
+   Exemplo de código:
+   ```html
+   <h1>Todas as Listas de Tarefas</h1>
+   <ul>
+     <% taskLists.forEach((list, index) => { %>
+       <li><a href="/taskList/<%= index %>"><%= list.name %></a></li>
+     <% }); %>
+   </ul>
+   <a href="/newList">Criar nova lista</a>
+   ```
+
+3. **`taskDetails.ejs`**:
+   - Exibe todas as tarefas de uma lista específica.
+   - Inclui opções para adicionar, marcar como concluída e excluir tarefas.
+
+   Exemplo de código:
+   ```html
+   <h1>Lista: <%= list.name %></h1>
+   <ul>
+     <% list.tasks.forEach((task, index) => { %>
+       <li>
+         <%= task.name %> 
+         <% if (!task.completed) { %>
+           <form method="POST" action="/taskList/<%= listId %>/completeTask/<%= index %>">
+             <button type="submit">Marcar como concluída</button>
+           </form>
+         <% } %>
+         <form method="POST" action="/taskList/<%= listId %>/deleteTask/<%= index %>">
+           <button type="submit">Excluir</button>
+         </form>
+       </li>
+     <% }); %>
+   </ul>
+   <form method="POST" action="/taskList/<%= listId %>/addTask">
+     <input type="text" name="taskName" placeholder="Nova tarefa">
+     <button type="submit">Adicionar</button>
+   </form>
+   ```
+
+---
+
+### Considerações Finais
+
+Este projeto oferece uma solução básica, mas funcional, para gerenciamento de listas de tarefas. 
+Ele pode ser facilmente expandido para incluir funcionalidades mais complexas, como autenticação de usuários, 
+filtros de tarefas, ou integração com bancos de dados. O uso de **Node.js** com **Express** permite uma aplicação leve e modular, 
+enquanto o **EJS** facilita a renderização de páginas dinâmicas.
+
+OBS: Os links de contato e etc não estão funcionais.
+
+
+
+

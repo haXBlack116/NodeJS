@@ -1,0 +1,376 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa; /* Fundo mais claro */
+    color: #212529; /* Cor de texto mais escura */
+    line-height: 1.6;
+}
+
+/* Navigation styles */
+nav {
+    background: #28a745;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: #218838;
+}
+
+/* Container for main content */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilizando o parágrafo na página de boas-vindas */
+h1 {
+    margin-top: 15px;
+    text-align: center; /* Centraliza o título */
+    color: #212529; /* Cor do texto do título */
+}
+
+h2 {
+    text-align: center; /* Centraliza o texto do h2 */
+    margin-bottom: 20px; /* Adiciona um espaçamento abaixo do h2 */
+}
+
+.bem-vindo {
+    text-align: center; /* Centraliza o título */
+    color: #212529; /* Cor do texto do título */
+    margin-top: 10px;
+}
+
+.welcome-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza a imagem e o título horizontalmente */
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.image-container {
+    width: 52px;  /* Largura da div que conterá a imagem */
+    height: 52px; /* Altura da div que conterá a imagem */
+    background-image: url('./checkImg.png'); /* Defina o caminho da imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    background-position: center; /* Centraliza a imagem */
+}
+
+.image-container-2 {
+    margin-top: 5px;
+    margin-right: 5px;
+    width: 30px;  /* Largura da div que conterá a imagem */
+    height: 32px; /* Altura da div que conterá a imagem */
+    background-image: url('./checkImg.png'); /* Defina o caminho da imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem */
+    background-position: center; /* Centraliza a imagem */
+}
+
+
+p {
+    font-size: 1.2rem; /* Tamanho da fonte do parágrafo */
+    line-height: 1.4; /* Reduz a altura da linha para um espaçamento melhor */
+    margin: 20px auto; /* Espaçamento superior e inferior */
+    max-width: 600px; /* Largura máxima do parágrafo */
+    color: #555; /* Cor do texto do parágrafo */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px; /* Espaçamento interno */
+    background: #d4edda; /* Fundo leve para destaque */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+    letter-spacing: 0; /* Define o espaçamento entre letras para padrão */
+}
+
+/* Task list styles */
+.tasks {
+    list-style: none;
+}
+
+.tasks li {
+    background: #e7fef0;
+    border: 1px solid #c4e0f4;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.tasks li:hover {
+    transform: scale(1.02);
+}
+
+/* Task title styles */
+.taskList-title {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.taskList-title:hover {
+    text-decoration: underline;
+}
+
+/* Button styles */
+button {
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #c4f4ca;
+    border-radius: 5px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .posts li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+    button {
+        margin-top: 10px;
+    }
+}
+
+/* Estilo para o contêiner do botão */
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+/* Estilo da caixa de seleção */
+.custom-checkbox {
+    display: flex;
+    align-items: center; /* Alinha verticalmente os itens ao centro */
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none; /* Esconde a checkbox padrão */
+}
+
+/* Estilo da caixa de seleção */
+.custom-checkbox .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #28a745;
+    border-radius: 4px;
+    position: relative;
+    margin-right: 10px; /* Espaçamento entre checkbox e texto */
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Estilo quando a checkbox está marcada */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+    background-color: #28a745; /* Verde */
+    border: 2px solid #28a745; /* Verde */
+}
+
+/* Ícone de seleção (pode ser um "check" dentro da caixa) */
+.custom-checkbox .checkmark::after {
+    content: '';
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/* Mostra o ícone quando a checkbox está marcada */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+    display: block;
+}
+
+.newList-container {
+    max-width: 600px; /* Define uma largura máxima do contêiner do formulário */
+    margin: 20px auto; /* Centraliza o contêiner na página */
+    padding: 20px; /* Adiciona espaçamento interno */
+    background: #fff; /* Fundo branco para destacar o contêiner */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para profundidade */
+}
+
+.newList-container form {
+    display: flex; /* Ativa o flexbox no formulário */
+    align-items: center; /* Alinha verticalmente os itens no centro */
+    gap: 10px; /* Espaçamento entre os elementos do formulário */
+}
+
+.newList-container input[type="text"] {
+    flex-grow: 1; /* Faz o input ocupar todo o espaço disponível */
+    padding: 10px; /* Ajusta o espaçamento interno do input */
+    border: 1px solid #c4f4c6; /* Borda do input */
+    border-radius: 5px; /* Bordas arredondadas do input */
+}
+
+.newList-container button[type="submit"] {
+    padding: 10px 15px; /* Ajusta o espaçamento interno do botão */
+    background-color: #28a745; /* Verde */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background 0.3s, transform 0.3s; /* Efeito de transição */
+}
+
+.newList-container button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+.new-list-form button:hover {
+    background-color: #218838;
+}
+
+.back-button {
+    display: flex; /* Ativa o flexbox para centralizar */
+    justify-content: center; /* Centraliza horizontalmente */
+    margin-top: 20px; /* Adiciona um espaçamento acima do botão */
+    text-align: center; /* Garante que o conteúdo interno esteja centralizado */
+}
+
+.back-button form {
+    width: 15%; /* Faz o formulário ocupar toda a largura do contêiner */
+}
+
+.back-button button {
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: 8px 15px; /* Reduz o espaçamento interno do botão */
+    width: 100%; /* Largura do botão de voltar */
+    background-color: #d9534f; /* Cor de fundo do botão de voltar */
+    color: white; /* Cor do texto do botão de voltar */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: background 0.3s; /* Efeito de transição */
+    text-align: center; /* Garante que o conteúdo interno esteja centralizado */
+    line-height: normal; /* Ajusta a altura da linha para centralizar o texto */
+}
+
+.back-button button:hover {
+    background-color: #c9302c; /* Cor de fundo ao passar o mouse */
+}
+
+.task-button {
+    padding: 15px 30px; /* Aumenta o espaçamento interno do botão */
+    display: block;
+    margin: 0 auto;
+    font-size: 1.2rem; /* Tamanho da fonte do botão */
+    font-weight: 500;
+    background-color: #28a745; /* Verde */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor em forma de mão */
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição */
+}
+
+.task-button:hover {
+    background: #218838;
+    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
+    box-shadow: 0 0 25px rgb(74, 226, 79); /* Efeito de brilho mais forte ao passar o mouse */
+}
+
+.task-button:active {
+    transform: scale(0.95); /* Reduz o botão ao clicar */
+}
+
+.footer {
+    background-color: #c4f4ca; /* Verde */
+    color: #212529; /* Cor do texto do rodapé */
+    display: flex;
+    flex-direction: column; /* Permite que o conteúdo seja empilhado verticalmente */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+    position: fixed; /* Faz o rodapé ficar sempre no final da página */
+    bottom: 0; /* Posiciona no final da janela */
+    width: 100%; /* Faz o rodapé ocupar toda a largura da página */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra leve */
+}
+
+.footer p {
+    margin: 0; /* Remove a margem padrão */
+    font-size: 14px; /* Tamanho do texto */
+}
+
+.footer-links {
+    list-style: none; /* Remove as bolinhas da lista */
+    padding: 0;
+    margin: 10px 0 0 0; /* Margem acima dos links */
+    display: flex; /* Usar flexbox para os links */
+    justify-content: center; /* Centraliza os links horizontalmente */
+}
+
+.footer-links li {
+    margin: 0 10px; /* Margem lateral entre os links */
+}
+
+.footer-links a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #007bff; /* Cor dos links */
+}
+
+.footer-links a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
